@@ -7,12 +7,12 @@ services:
       - ./reports:/app/reports
     environment:
       - TZ=UTC
-      - METABASE_URL=http://10.136.0.10:3000/public/dashboard/65d5d5e0
-      - REPORT_TITLE=OAS Daily Report
+      - METABASE_URL=https://metabase.example.com/public/dashboard/123456
+      - REPORT_TITLE=Daily Report
       - SEND_EMAIL=true
-      - EMAIL_FROM=oastarrawonga@whitehavencoal.com.au
+      - EMAIL_FROM=sender@example.com
       - EMAIL_TO=recipient@example.com
-      - SMTP_HOST=10.136.0.10
+      - SMTP_HOST=127.0.0.1
       - SMTP_PORT=25
-      - DELETE_AFTER_EMAIL=false
+      - DELETE_AFTER_EMAIL=true
     restart: unless-stopped
