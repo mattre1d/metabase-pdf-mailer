@@ -1,0 +1,26 @@
+{
+    "name": "metabase-pdf-mailer",
+    "version": "1.0.0",
+    "description": "Generate and email custom PDF reports from Metabase dashboards",
+    "main": "metabase-pdf-mailer.js",
+    "scripts": {
+        "start": "node metabase-pdf-mailer.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "metabase",
+        "pdf",
+        "report",
+        "automation"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "nodemailer": "^6.9.7",
+        "puppeteer": "^24.4.0",
+        "yargs": "^17.7.2"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

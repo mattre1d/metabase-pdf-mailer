@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  metabase-pdf-generator:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+    environment:
+      - TZ=UTC
+      - METABASE_URL=http://10.136.0.10:3000/public/dashboard/65d5d5e0
+      - REPORT_TITLE=OAS Daily Report
+      - SEND_EMAIL=true
+      - EMAIL_FROM=oastarrawonga@whitehavencoal.com.au
+      - EMAIL_TO=recipient@example.com
+      - SMTP_HOST=10.136.0.10
+      - SMTP_PORT=25
+      - DELETE_AFTER_EMAIL=false
+    restart: unless-stopped

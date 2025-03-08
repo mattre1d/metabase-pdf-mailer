@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+.github
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Reports and temporary files
+reports/
+downloads/
+*.pdf
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Development files
+.vscode/
+.idea/
+*.md
+!README.md
+test/
+coverage/
+
+# Dependencies
+node_modules/
+
+# Misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
