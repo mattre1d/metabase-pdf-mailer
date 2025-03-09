@@ -1,6 +1,6 @@
 {
     "name": "metabase-pdf-mailer",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Generate and email custom PDF reports from Metabase dashboards",
     "main": "metabase-pdf-mailer.js",
     "scripts": {

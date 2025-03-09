@@ -51,5 +51,5 @@ CMD ["node", "metabase-pdf-mailer.js"]
 VOLUME ["/app/reports"]
 
 LABEL maintainer="Matt Reid" \
-      version="1.0" \
+      version="1.1" \
       description="Metabase PDF Report Mailer"
