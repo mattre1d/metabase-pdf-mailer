@@ -3,6 +3,7 @@ node_modules/
 
 # Generated PDF reports
 *.pdf
+*.png
 reports/
 downloads/
 
